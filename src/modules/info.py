@@ -51,7 +51,7 @@ def getDiskInfo():
                 free  = int(psutil.disk_usage(disk.mountpoint).free)
 
         return(f'''
-:floppy_disk: TOTAL DISK SPACE : {round(total / (1024.0 ** 3), 4)} GiB
-:floppy_disk: USED DISK SPACE  : {round(used / (1024.0 ** 3), 4)} GiB
-:floppy_disk: FREE DISK SPACE  : {round(free / (1024.0 ** 3), 4)} GiB
+TOTAL DISK SPACE : {round(total / (1024.0 ** 3), 4)} GiB
+USED DISK SPACE  : {round(used / (1024.0 ** 3), 4)} GiB
+FREE DISK SPACE  : {round(free / (1024.0 ** 3), 4)} GiB
         ''')
