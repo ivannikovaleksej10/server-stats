@@ -1,6 +1,10 @@
 # Server Stats
 ### Application for tracking resources consumed by a remote server
 
+## Requirements
+python ^3.12, but in fact it will run on any version above 3.10, and with skillful hands - starting from 3.8
+
+
 ## Before starting
 * Install poetry
 ```$ pip install poetry```
