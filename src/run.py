@@ -32,11 +32,11 @@ def main():
     threadConsole.daemon = True
     threadConsole.start()
 
+    start_server(www, port=8080, debug=False)
 
 if __name__ == "__main__":
     try:
         main()
-        start_server(www, port=8080, debug=False)
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
